@@ -1,0 +1,99 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.form-registro{
+   width: 400px;
+   background: #2F4F4F;
+   padding: 30px;
+   margin: auto;
+   margin-top: 60px;
+   border-radius: 4px;
+   font-family: "calibri";
+   color: white;
+   box-shadow: 7px 13px 37px #000;
+}
+.form-registro h4{
+   font-size: 22px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+.form-registro h2{
+   font-size: 19px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+.form-registro img{
+  width:32.5%;
+  height:100px;
+}
+.controles{
+   width: 100%;
+   background: #2F4F4F;
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 16px;
+   border: 1px solid #5F9EA0;
+   font-family: "calibri";
+   font-size: 18px;
+   color: white;
+}
+.form-registro p{
+   height: 40px;
+   text-align: center;
+   font-size: 18px;
+   line-height: 40px;
+}
+.form-registro a{
+   color: white;
+   text-decoration: none;
+}
+.form-registro a:hover{
+   color: white;
+   text-decoration: underline;
+}
+.form-registro .boton{
+   width: 100%;
+   background: #5F9EA0;
+   border-radius: 10px;
+   padding: 12px;
+   color: white;
+   margin: 16px 0;
+   font-size:16px;
+}
+.form-registro .boton:hover{
+   background-color: #5499C7;
+}
+.titulo{
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.menu{
+  color: #D85EEE;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify and center;
+}
+.tabla{
+   width: 60%;
+   background: #2F4F4F;
+   padding: 30px;
+   margin: auto;
+   margin-top: 60px;
+   border-radius: 4px;
+   font-family: "calibri";
+   color: white;
+   box-shadow: 7px 13px 37px #000;
+   text-align: justify and center;
+}
+.edi{
+   width: 50px;
+   background: #5F9EA0;
+   border-radius: 10px;
+   padding: 10px;
+   color: white;
+   margin: 13px 0;
+   font-size:14px;
+}

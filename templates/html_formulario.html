@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es=MX">
+<head>
+ <meta charset="UTF-8">
+    <meta author="Wendy Yetlanehzy Martinez Hernandez">
+    <meta description="Esta es una pagina de prueba">
+    <meta keywords="html, aplicaciones web">
+    <link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/styles_form.css" type="text/css">
+</head>
+
+    <body>
+     <form action="{{url_for('guardar_producto')}}" method="post">
+    <section class="form-registro">
+      <h4>Productos</h4>
+      <label for="nombre">Nombre:</label>
+      <input class="controles" type="text" name="nombre" id="nombre" placeholder="Ingrese nombre de producto" required>
+      <label for="precio">Precio:</label>
+      <input class="controles" type="text" name="precio" id="precio" placeholder="Precio del producto" required>
+      <label for="descrip">Descripción:</label>
+      <input class="controles" type="text" name="descrip" id="descrip" placeholder="Descripción del producto" required>
+      <img src="./static/images/collar_hue.jpg" align="center">
+      <img src="./static/images/cas.jpg" align="center">
+      <img src="./static/images/rat.jpg" align="center">
+      <p> Acepto <a href="#">Terminos y Condiciones</a></p>
+      <input class="boton" type="submit" value="Enviar">
+    </section>
+       </form>
+     <br>
+     <br>
+     <br>
+    <div>
+        <h1 class="titulo">Respuestas</h1>
+    </div>
+    <div>
+        <table class="tabla">
+            <thead>
+               <tr>
+                   <td class="menu">Producto</td>
+                   <td class="menu">Descripción</td>
+                   <td class="menu">Precio</td>
+                   <td class="menu">Editar</td>
+                   <td class="menu">Eliminar</td>
+               </tr>
+            </thead>
+            <tbody>
+
+              {% for producto in lista_productos %}
+              <tr>
+                  <td>{{producto.1}}</td>
+                  <td>{{producto.2}}</td>
+                  <td>{{producto.3}}</td>
+                  <td class="edi"><a href="/consultar_producto/{{producto.0}}">Editar</a></td>
+                  <td class="edi"><a href="/eliminar_producto/{{producto.0}}">Eliminar</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>
